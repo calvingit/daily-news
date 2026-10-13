@@ -1,0 +1,11 @@
+baseURL = "https://example.pages.dev/"
+languageCode = "zh-CN"
+title = "每日早间资讯"
+hasCJKLanguage = true
+[params]
+description = "X 热点 · AI 编程 · iOS / Flutter，每天早上一篇"
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 3
+[markup.goldmark.renderer]
+unsafe = false

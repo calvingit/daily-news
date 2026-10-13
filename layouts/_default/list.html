@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{ if .IsHome }}<section class="intro"><h1>{{ site.Title }}</h1><p>{{ site.Params.description }}</p></section>{{ end }}
+{{ range (where site.RegularPages "Section" "posts").GroupByDate "2006 年 1 月" }}
+<h2 class="month">{{ .Key }}</h2>
+{{ range .Pages }}<article class="card"><a href="{{ .RelPermalink }}">
+<time>{{ .Date.Format "01-02 · Mon" }}</time><h3>{{ .Title }}</h3>
+<p>{{ .Summary | plainify | truncate 90 }}</p>
+<div class="tags">{{ range .Params.tags }}<span>#{{ . }}</span>{{ end }}</div></a></article>{{ end }}
+{{ end }}{{ end }}
