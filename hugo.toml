@@ -1,4 +1,4 @@
-baseURL = "https://daily-news-953.pages.dev/"
+baseURL = "https://daily-news.zhangwen.site/"
 locale = "zh-CN"
 defaultContentLanguage = "zh"
 title = "每日早间资讯"
