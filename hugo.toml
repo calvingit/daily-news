@@ -1,11 +1,53 @@
 baseURL = "https://example.pages.dev/"
-languageCode = "zh-CN"
+locale = "zh-CN"
+defaultContentLanguage = "zh"
 title = "每日早间资讯"
+theme = "PaperMod"
 hasCJKLanguage = true
+enableEmoji = true
+[pagination]
+pagerSize = 10
+[outputs]
+home = ["HTML", "RSS", "JSON"]
 [params]
 description = "X 热点 · AI 编程 · iOS / Flutter，每天早上一篇"
+defaultTheme = "auto"
+ShowToc = true
+TocOpen = true
+ShowReadingTime = true
+ShowWordCount = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+DateFormat = "2006-01-02"
+[params.homeInfoParams]
+Title = "☀️ 每日早间资讯"
+Content = "X 热点 · AI 编程 · iOS / Flutter —— 每天早上 8 点更新"
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+[languages.zh]
+locale = "zh-CN"
+label = "简体中文"
+[[languages.zh.menu.main]]
+name = "归档"
+url = "archives/"
+weight = 10
+[[languages.zh.menu.main]]
+name = "搜索"
+url = "search/"
+weight = 20
+[[languages.zh.menu.main]]
+name = "标签"
+url = "tags/"
+weight = 30
 [markup.tableOfContents]
 startLevel = 2
 endLevel = 3
-[markup.goldmark.renderer]
-unsafe = false
+[markup.highlight]
+noClasses = false
