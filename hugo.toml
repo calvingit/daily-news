@@ -10,7 +10,7 @@ pagerSize = 10
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 [params]
-description = "X 热点 · AI 编程 · iOS / Flutter，每天早上一篇"
+description = "X 热点 · AI 编程，每天早上一篇"
 defaultTheme = "auto"
 ShowToc = true
 TocOpen = true
@@ -22,7 +22,7 @@ ShowCodeCopyButtons = true
 DateFormat = "2006-01-02"
 [params.homeInfoParams]
 Title = "☀️ 每日早间资讯"
-Content = "X 热点 · AI 编程 · iOS / Flutter —— 每天早上 8 点更新"
+Content = "X 热点 · AI 编程 —— 每天早上 8 点更新"
 [params.fuseOpts]
 isCaseSensitive = false
 shouldSort = true
