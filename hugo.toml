@@ -48,6 +48,9 @@ url = "tags/"
 weight = 30
 [markup.tableOfContents]
 startLevel = 2
-endLevel = 3
+endLevel = 2
+[markup.goldmark.parser.attribute]
+block = true
+title = true
 [markup.highlight]
 noClasses = false

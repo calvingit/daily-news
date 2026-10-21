@@ -1,0 +1,119 @@
+/* ===== Daily digest news-card layout ===== */
+.post-content {
+  line-height: 1.85;
+}
+.post-content p {
+  letter-spacing: 0.01em;
+}
+
+/* Sections */
+.post-content h2 {
+  font-size: 1.45rem;
+  margin: 2.6rem 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Item headline */
+.post-content h3 {
+  font-size: 1.18rem;
+  line-height: 1.5;
+  font-weight: 700;
+  margin: 2rem 0 0.55rem;
+}
+.post-content h2 + h3,
+.post-content h2 + p + h3 {
+  margin-top: 1.2rem;
+}
+.post-content h3 + p {
+  margin-bottom: 0.7rem;
+}
+
+/* Source list under each item */
+.post-content ul.sources {
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0 0 1.4rem;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--secondary);
+}
+.post-content ul.sources li {
+  position: relative;
+  margin-top: 0.3rem;
+  padding-inline-start: 1.35rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.post-content ul.sources li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.22em;
+  width: 0.9em;
+  height: 0.9em;
+  background-color: currentColor;
+  opacity: 0.7;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.post-content ul.sources a,
+.post-content ul.briefs a,
+.post-content .source-note a {
+  color: var(--secondary);
+  text-decoration: none;
+  box-shadow: none;
+}
+.post-content ul.sources a {
+  color: var(--content);
+  opacity: 0.78;
+}
+.post-content ul.sources a:hover,
+.post-content ul.briefs a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/* Short-news list */
+.post-content ul.briefs {
+  padding-inline-start: 1.1rem;
+}
+.post-content ul.briefs li {
+  margin-top: 0.55rem;
+  line-height: 1.75;
+}
+.post-content ul.briefs a {
+  font-size: 0.84rem;
+  white-space: nowrap;
+}
+
+/* GitHub Trending list */
+.post-content ul.repos {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.post-content ul.repos li {
+  margin-top: 0.9rem;
+  line-height: 1.7;
+}
+.post-content ul.repos li a {
+  text-decoration: none;
+}
+
+/* End-of-post source note */
+.post-content blockquote.source-note {
+  margin-top: 2.2rem;
+  padding: 0.8rem 1rem;
+  border-inline-start: 3px solid var(--tertiary);
+  background: var(--code-bg);
+  border-radius: 6px;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: var(--secondary);
+}
+
+@media (max-width: 600px) {
+  .post-content h2 { font-size: 1.3rem; }
+  .post-content h3 { font-size: 1.08rem; }
+  .post-content ul.sources { font-size: 0.8rem; }
+}
